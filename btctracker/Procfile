@@ -1,0 +1,2 @@
+web: gunicorn bitcointracker.wsgi
+clock: python clock.py

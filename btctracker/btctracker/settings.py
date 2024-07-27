@@ -11,6 +11,10 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+# import os
+import environ
+env = environ.Env()
+env.read_env(env.str('ENV_PATH', 'btctracker\.env'))
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -20,7 +24,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-8k6wc!%jc=^whx@b@57*ebzzljg194$b!z#yxk!@py+ql69g)1'
+SECRET_KEY = env('DJANGO_KEY')
+print(SECRET_KEY)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -34,8 +39,8 @@ EMAIL_USE_TLS = True
 # sender Gmail address
 EMAIL_HOST_USER = 'adityagautam1911@gmail.com'
 # sender gmail app password
-EMAIL_HOST_PASSWORD = 'uthy lklz trsq qjln'
-
+EMAIL_HOST_PASSWORD = env('PASS')
+print(EMAIL_HOST_PASSWORD)
 
 # Application definition
 

@@ -1,6 +1,7 @@
 ﻿# Crypto-price-alert-using-Django
 
  ### To run :-
+ --> .\tanXenv\Scripts\activate  (activate virtual environment)
  --> pip install -r requirements.txt <br/>
  --> python manage.py runserver <br/>
  --> run clock.py <br/>

@@ -1,7 +1,7 @@
 ﻿# Crypto-price-alert-using-Django
 
  ### To run :-
- --> pip install -r requirements.txt
+ --> pip install -r requirements.txt <br/>
  --> python manage.py runserver
  --> run clock.py
 

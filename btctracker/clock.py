@@ -21,18 +21,18 @@ def bitcoin_price_alert():
     results = json.loads(get_bitcoin_price.text)
     current_price = results['bpi']['USD']['rate_float']
 
-    if current_price < 30000:
+    if current_price < 40000:
         send_mail(
-            "BTC PRICE LOWER THAN 30k !!",  # subject message
+            "BTC PRICE LOWER THAN 40k !!",  # subject message
             'Price Alert - Current BTC price is {}'.format(current_price),
             "adityagautam1911@gmail.com",  # from
             ["aditya.gautam2021@vitstudent.ac.in"],  # to
             fail_silently=False,
         )
 
-    if current_price >= 30000:
+    if current_price >= 40000:
         send_mail(
-            "BTC PRICE MORE THAN 30k !!",
+            "BTC PRICE MORE THAN 40k !!",
             'Price Alert - Current BTC price is {}'.format(current_price),
             "adityagautam1911@gmail.com",  # from
             ["aditya.gautam2021@vitstudent.ac.in"],  # to

@@ -5,7 +5,7 @@
  --> python manage.py runserver <br/>
  --> run clock.py <br/>
 
- NOTE :- check the email user host details in settings.py and update the email recipient list in clock.py
+ NOTE :- check the email user host details (password must be app password ifusing gmail) in settings.py and update the email recipient list in clock.py
 
  (if any changes made , do migration) <br/>
  --> python manage.py makemigrations <br/>

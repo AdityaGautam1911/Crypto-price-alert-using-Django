@@ -17,3 +17,5 @@
 
 ### USER RECEIVING ALERTS
 ![image](https://github.com/user-attachments/assets/5c9da857-f65d-45e8-927b-2801dbfa9723)
+![image](https://github.com/user-attachments/assets/55d35f10-fde2-4c47-b668-64050da5e7fd)
+

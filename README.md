@@ -5,6 +5,8 @@
  --> python manage.py runserver <br/>
  --> run clock.py <br/>
 
+ NOTE :- check the email user host details in settings.py and update the email recipient list in clock.py
+
  (if any changes made , do migration) <br/>
  --> python manage.py makemigrations <br/>
  --> python manage.py migrate <br/>
